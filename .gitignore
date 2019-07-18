@@ -1,0 +1,44 @@
+# Logs #
+/logs
+*.log
+*.log*
+*.db
+
+# Node files #
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# OS generated files #
+.DS_Store
+Thumbs.db
+.tmp/
+src/api/schema.gql
+
+# Typing #
+typings/
+
+# Dist #
+dist/
+
+# IDE #
+.idea/
+*.swp
+.awcache
+
+# Generated source-code #
+src/**/*.js
+src/**/*.js.map
+!src/public/**/*
+test/**/*.js
+test/**/*.js.map
+coverage/
+!test/preprocessor.js
+mydb.sql
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+#!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+schema.gql
