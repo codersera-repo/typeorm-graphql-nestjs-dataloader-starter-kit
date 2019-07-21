@@ -31,6 +31,6 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Typeorm Nestjs graphql dataloader tutorial
 For detailed tutorial on setting up of each file, follow  here
-https://github.com/codersera-repo/typeorm-graphql-nestjs-dataloader-starter-kit
+https://codersera.com/blog/nestjs-typeorm-graphql-dataloader-tutorial-with-typescript/
 
 
