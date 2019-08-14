@@ -7,7 +7,7 @@ const batchBooks = async (genreIds: string[]) => {
   const bookGenres = await getRepository(BookGenre)
     .createQueryBuilder('bookGenres')
     .leftJoinAndSelect('bookGenres.book', 'book')
-    .where('bookGenres.id IN(:...ids)', {ids: genreIds})
+    .where('bookGenres.genre IN(:...ids)', {ids: genreIds})
     .getMany();
   const genreIdToBooks: {[key: string]: Book[]} = {};
   bookGenres.forEach(bookGenre => {
