@@ -34,7 +34,7 @@
     "rimraf": "^2.6.2",
     "rxjs": "^6.3.3",
     "sqlite3": "^4.0.9",
-    "type-graphql": "^0.17.4",
+    "type-graphql": "^0.17.6",
     "typeorm": "^0.2.18",
     "voyager": "^0.4.13"
   },
