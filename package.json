@@ -35,7 +35,7 @@
     "rxjs": "^6.3.3",
     "sqlite3": "^4.0.9",
     "type-graphql": "^0.17.4",
-    "typeorm": "^0.2.18",
+    "typeorm": "^0.2.25",
     "voyager": "^0.4.13"
   },
   "devDependencies": {

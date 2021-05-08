@@ -652,10 +652,10 @@ apollo-utilities@^1.0.1, apollo-utilities@^1.3.0:
     ts-invariant "^0.4.0"
     tslib "^1.9.3"
 
-app-root-path@^2.0.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/app-root-path/-/app-root-path-2.2.1.tgz#d0df4a682ee408273583d43f6f79e9892624bc9a"
-  integrity sha512-91IFKeKk7FjfmezPKkwtaRvSpnUc4gDwPAjA1YZ9Gn0q0PPeW+vbeUsZuyDwjI7+QTHhcLen2v25fi/AmhvbJA==
+app-root-path@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/app-root-path/-/app-root-path-3.0.0.tgz#210b6f43873227e18a4b810a032283311555d5ad"
+  integrity sha512-qMcx+Gy2UZynHjOHOIXPNvpf+9cjvk3cWrBBK7zg4gH9+clobJRb9NGzcT7mQTcV/6Gm/1WelUtqxVXnNlrwcw==
 
 append-field@^1.0.0:
   version "1.0.0"
@@ -4278,6 +4278,11 @@ mkdirp@0.x, mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
+mkdirp@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
+  integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -5615,12 +5620,7 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sql-template-strings@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/sql-template-strings/-/sql-template-strings-2.2.2.tgz#3f11508a25addfce217a3042a9d300c3193b96ff"
-  integrity sha1-PxFQiiWt384hejBCqdMAwxk7lv8=
-
-sqlite3@^4.0.0, sqlite3@^4.0.9:
+sqlite3@^4.0.9:
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/sqlite3/-/sqlite3-4.0.9.tgz#cff74550fa5a1159956815400bdef69245557640"
   integrity sha512-IkvzjmsWQl9BuBiM4xKpl5X8WCR4w0AeJHRdobCdXZ8dT/lNc1XS6WqvY35N6+YzIIgzSBeY5prdFObID9F9tA==
@@ -5628,15 +5628,6 @@ sqlite3@^4.0.0, sqlite3@^4.0.9:
     nan "^2.12.1"
     node-pre-gyp "^0.11.0"
     request "^2.87.0"
-
-sqlite@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/sqlite/-/sqlite-3.0.3.tgz#3f519cfc599ffa3270d76f3567bf2abb2ac18742"
-  integrity sha512-DpofdtBibbiOObtdADGZYE6bvnLpjRG4ut/MDTDau2nK40htOLj1E0c55aOkvbnRVqQ0ZPtjj7PJuKKyS0Ypww==
-  dependencies:
-    sqlite3 "^4.0.0"
-  optionalDependencies:
-    sql-template-strings "^2.2.2"
 
 sshpk@^1.7.0:
   version "1.16.1"
@@ -6153,12 +6144,12 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeorm@^0.2.18:
-  version "0.2.18"
-  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.2.18.tgz#8ae1d21104117724af41ddc11035c40a705e1de8"
-  integrity sha512-S553GwtG5ab268+VmaLCN7gKDqFPIzUw0eGMTobJ9yr0Np62Ojfx8j1Oa9bIeh5p7Pz1/kmGabAHoP1MYK05pA==
+typeorm@^0.2.25:
+  version "0.2.25"
+  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.2.25.tgz#1a33513b375b78cc7740d2405202208b918d7dde"
+  integrity sha512-yzQ995fyDy5wolSLK9cmjUNcmQdixaeEm2TnXB5HN++uKbs9TiR6Y7eYAHpDlAE8s9J1uniDBgytecCZVFergQ==
   dependencies:
-    app-root-path "^2.0.1"
+    app-root-path "^3.0.0"
     buffer "^5.1.0"
     chalk "^2.4.2"
     cli-highlight "^2.0.0"
@@ -6166,8 +6157,9 @@ typeorm@^0.2.18:
     dotenv "^6.2.0"
     glob "^7.1.2"
     js-yaml "^3.13.1"
-    mkdirp "^0.5.1"
+    mkdirp "^1.0.3"
     reflect-metadata "^0.1.13"
+    sha.js "^2.4.11"
     tslib "^1.9.0"
     xml2js "^0.4.17"
     yargonaut "^1.1.2"
